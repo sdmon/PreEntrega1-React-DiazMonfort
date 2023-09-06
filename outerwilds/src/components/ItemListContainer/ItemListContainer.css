@@ -1,0 +1,6 @@
+.div-item{
+    display: flex;
+    justify-content: center;
+    margin:15vh;
+    padding:15vh;
+}
