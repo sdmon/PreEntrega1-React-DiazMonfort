@@ -1,14 +1,15 @@
 import CartWidget from '../CartWidget/CartWidget';
 import './Navbar.css';
 import { AppBar, Toolbar, Button, Typography } from '@mui/material';
+import logo from '../../assets/logo.png'
+
+
 
 const Navbar = () => {
     return (    
     <AppBar>        
         <Toolbar className='toolbar-navbar' sx={{display: 'flex', justifyContent: 'center'}}>
-            <Typography sx={{color:"white", marginRight:'30px'}}>
-                Outer Wilds
-            </Typography>            
+            <img src={logo} alt="Outer Wilds Logo" height="55" width="60" />
             <Button sx={{color: 'orange'}}>
                 Home
             </Button>
@@ -18,7 +19,7 @@ const Navbar = () => {
             <Button sx={{color: 'orange', marginLeft: '5px'}}>
                 Productos
             </Button>            
-            <CartWidget/><span>1</span>                     
+            <CartWidget />                  
         </Toolbar>
 
     </AppBar>);   

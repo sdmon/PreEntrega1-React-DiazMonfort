@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import Banner from './components/Banner/Banner'
 
 function App() {   
     
@@ -8,7 +9,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <ItemListContainer bienvenidos={bienvenidos}/>
+      <div className="ow-banner">
+        <Banner/>
+      </div>
+      <ItemListContainer  bienvenidos={bienvenidos}/>      
     </>
   )
 }

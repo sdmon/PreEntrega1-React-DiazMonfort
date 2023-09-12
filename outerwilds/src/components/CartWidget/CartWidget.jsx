@@ -3,9 +3,9 @@ import './CartWidget.css'
 
 const CartWidget = () => {
     return (
-    <div className="cart-style">
-        <AddShoppingCartIcon/>
-    </div>);    
+        <>
+            <AddShoppingCartIcon sx={{ marginLeft: '7px'}} /><span>1</span>
+        </>)
 }
  
 export default CartWidget;
